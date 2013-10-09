@@ -1,0 +1,28 @@
+set number
+set enc=utf-8
+syntax on
+colorscheme desert
+set mouse=a
+
+nnoremap <F3> :tabnew<cr>
+nnoremap <F4> :tabnext<cr>
+nnoremap <F2> :tabprev<cr>
+
+set smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+
+"filetype plugin on
+"set grepprg=grep\ -nH\ $*
+"filetype indent on
+"let g:tex_flavor='latex'
+
+map <F5> :w !detex \| wc -w<CR>
+imap ,jsp <%@page contentType="text/html; charset=UTF-8" %>
+imap ,html <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><CR><html><CR><head><CR><title></title><CR><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><CR></head><CR><body><CR><CR></body><CR></html>
+"source $HOME/.vim/map/latex_template
