@@ -48,6 +48,12 @@ setup_gitconfig () {
   fi
 }
 
+install_oh-my-zsh () {
+  info 'install oh-my-zsh'
+  curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+  success 'oh-my-zsh'
+}
+
 link_files () {
   ln -s $1 $2
   success "linked $1 to $2"
@@ -62,7 +68,14 @@ install_dotfiles () {
 
   for source in `find $DOTFILES_ROOT -maxdepth 2 -name \*.symlink`
   do
-    dest="$HOME/.`basename \"${source%.*}\"`"
+    filename="`basename \"${source%.*}\"`"
+
+    if [ "$filename"  = "joharei.zsh-theme" ]
+    then
+      dest="$HOME/.oh-my-zsh/themes/$filename"
+    else
+      dest="$HOME/.$filename"
+    fi
 
     if [ -f $dest ] || [ -d $dest ]
     then
@@ -121,6 +134,7 @@ install_dotfiles () {
 }
 
 #setup_gitconfig
+install_oh-my-zsh
 install_dotfiles
 
 # If we are on a mac, lets install and setup homebrew
