@@ -1,8 +1,10 @@
 set number
 set enc=utf-8
+set mouse=a
+set modeline
 syntax on
 colorscheme desert
-set mouse=a
+filetype indent plugin on
 
 nnoremap <F3> :tabnew<cr>
 nnoremap <F4> :tabnext<cr>
