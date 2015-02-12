@@ -43,9 +43,6 @@
 [submodule "vim.symlink/bundle/minibufexpl"]
 	path = vim.symlink/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "vim.symlink/bundle/ropevim"]
-	path = vim.symlink/bundle/ropevim
-	url = https://github.com/python-rope/ropevim.git
 [submodule "vim.symlink/bundle/pyflakes-pathogen"]
 	path = vim.symlink/bundle/pyflakes-pathogen
 	url = https://github.com/mitechie/pyflakes-pathogen.git
