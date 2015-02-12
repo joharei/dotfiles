@@ -1,10 +1,42 @@
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+
+let mapleader=","
+
+"syntastic stuff
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_flake8_args = "--max-line-length=120"
+
+
+set foldmethod=indent
+set foldlevel=99
+map <leader>td <Plug>TaskList
+map <leader>g :GundoToggle<CR>
+noremap <leader>s :update<CR>
+"let g:pyflakes_use_quickfix = 0
+let g:pep8_map='<leader>p'
+
+set omnifunc=python3complete#Complete
+"let g:pyflakes_python_version = 3
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 set number
 set enc=utf-8
 set mouse=a
 set modeline
 syntax on
 colorscheme desert
-filetype indent plugin on
+filetype on
+filetype plugin indent on
 
 nnoremap <F3> :tabnew<cr>
 nnoremap <F4> :tabnext<cr>
@@ -19,12 +51,15 @@ set expandtab
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
-"filetype plugin on
-"set grepprg=grep\ -nH\ $*
-"filetype indent on
-"let g:tex_flavor='latex'
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
 
-map <F5> :w !detex \| wc -w<CR>
-imap ,jsp <%@page contentType="text/html; charset=UTF-8" %>
-imap ,html <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><CR><html><CR><head><CR><title></title><CR><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><CR></head><CR><body><CR><CR></body><CR></html>
+nnoremap k gk
+nnoremap <Up> g<Up>
+nnoremap j gj
+nnoremap <Down> g<Down>
+
+map <F6> :w !detex \| wc -w<CR>
+imap <leader>jsp <%@page contentType="text/html; charset=UTF-8" %>
+imap <leader>html <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><CR><html><CR><head><CR><title></title><CR><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><CR></head><CR><body><CR><CR></body><CR></html>
 "source $HOME/.vim/map/latex_template

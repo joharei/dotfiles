@@ -1,0 +1,51 @@
+[submodule "vim.symlink/bundle/fugitive"]
+	path = vim.symlink/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim.symlink/bundle/snipmate"]
+	path = vim.symlink/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim.symlink/bundle/surround"]
+	path = vim.symlink/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim.symlink/bundle/git"]
+	path = vim.symlink/bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim.symlink/bundle/supertab"]
+	path = vim.symlink/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim.symlink/bundle/command-t"]
+	path = vim.symlink/bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "vim.symlink/bundle/ack"]
+	path = vim.symlink/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim.symlink/bundle/gundo"]
+	path = vim.symlink/bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim.symlink/bundle/pydoc"]
+	path = vim.symlink/bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "vim.symlink/bundle/pep8"]
+	path = vim.symlink/bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "vim.symlink/bundle/py.test"]
+	path = vim.symlink/bundle/py.test
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "vim.symlink/bundle/makegreen"]
+	path = vim.symlink/bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "vim.symlink/bundle/tasklist"]
+	path = vim.symlink/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "vim.symlink/bundle/nerdtree"]
+	path = vim.symlink/bundle/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim.symlink/bundle/minibufexpl"]
+	path = vim.symlink/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim.symlink/bundle/ropevim"]
+	path = vim.symlink/bundle/ropevim
+	url = https://github.com/python-rope/ropevim.git
+[submodule "vim.symlink/bundle/pyflakes-pathogen"]
+	path = vim.symlink/bundle/pyflakes-pathogen
+	url = https://github.com/mitechie/pyflakes-pathogen.git
