@@ -95,3 +95,6 @@ ex ()
 export EDITOR=vim
 export VISUAL=vim
 alias vi=vim
+
+# Add ssh key when needed
+ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
