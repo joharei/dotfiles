@@ -38,9 +38,9 @@ colorscheme desert
 filetype on
 filetype plugin indent on
 
-nnoremap <F3> :tabnew<cr>
-nnoremap <F4> :tabnext<cr>
-nnoremap <F2> :tabprev<cr>
+nnoremap <F3> :enew<cr>
+nnoremap <F4> :bnext<cr>
+nnoremap <F2> :bprevious<cr>
 
 set smartindent
 set tabstop=4
