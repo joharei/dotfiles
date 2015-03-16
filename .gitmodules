@@ -10,9 +10,6 @@
 [submodule "vim.symlink/bundle/git"]
 	path = vim.symlink/bundle/git
 	url = https://github.com/tpope/vim-git.git
-[submodule "vim.symlink/bundle/supertab"]
-	path = vim.symlink/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "vim.symlink/bundle/command-t"]
 	path = vim.symlink/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
@@ -46,3 +43,6 @@
 [submodule "vim.symlink/bundle/pyflakes-pathogen"]
 	path = vim.symlink/bundle/pyflakes-pathogen
 	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "vim.symlink/bundle/jedi-vim"]
+	path = vim.symlink/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
