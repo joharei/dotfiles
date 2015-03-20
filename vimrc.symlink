@@ -8,13 +8,16 @@ let mapleader=","
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_flake8_args = "--max-line-length=120"
 
+"nerdtree stuff
+map <C-n> :NERDTreeToggle<CR>
+"close vim if nerdtree is the only buffer left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 set foldmethod=indent
 set foldlevel=99
